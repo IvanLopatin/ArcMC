@@ -1,0 +1,10 @@
+
+/opt/local/pgsql/bin/psql rwdb web -c "select usr.user_login, usr.user_first_name, usr.user_last_name, ug.user_group_name from public.users usr left join public.user_group_mems ugm on (usr.user_id_seq = ugm.user_id_seq) join public.user_groups ug on (ugm.user_group_id_seq = ug.user_group_id_seq) order by usr.user_login, ug.user_group_name;"
+
+ user_login  | user_first_name | user_last_name |      user_group_name
+-------------+-----------------+----------------+----------------------------
+ admin       | Default         | Admin          | Default ArcMC Rights Group
+ admin       | Default         | Admin          | Default System Admin Group
+ user1       | Joe             | User           | Default ArcMC Rights Group
+ user1       | Joe             | User           | Default System Admin Group
+ 
