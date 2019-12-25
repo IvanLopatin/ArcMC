@@ -1,0 +1,22 @@
+Obtain New Cert from Marketplace (these instructions work best using a Firefox browser)
+In your browser, click the padlock icon next to the URL
+Select more information
+View Certificate
+Select Details tab
+Click Export (Make sure X.509 Certificate (PEM) is selected)
+Go to https://marketplace.saas.hpe.com/arcsight/
+Using your browser, export the cert from Marketplace website
+With the new certificate saved to local disk, rename new cert from "marketplacesaashpecom.crt" to "marketplace.saas.hpe.com"
+SSH to ArcMC
+cd to the "/opt/arcmc/current/arcsight/arcmc/config/certs" directory
+Rename the current cert from "marketplace.saas.hpe.com" to something else
+SFTP (or FTP) to ArcMC
+Move/copy your new cert (that was renamed) to the “/opt/arcmc/current/arcsight/arcmc/config/certs" directory
+Stop ArcMC services via SSH
+cd to the /opt/arcmc/current/arcsight/arcmc/bin directory
+Stop the ArcMC services (./arcmcd stop)
+Check the status of the services to insure they have stopped (./arcmcd status)
+Reboot the system (OS) that ArcMC is running on
+Once the system is back up, check ArcMC services to insure they are all running via SSH
+cd to the /opt/arcmc/current/arcsight/arcmc/bin directory
+Check the status of the services to insure they are running (./arcmcd status)
