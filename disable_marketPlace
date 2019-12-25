@@ -1,0 +1,9 @@
+#fix problem - 'internet connection unavailable'
+
+#1/SSH the ArcMC
+#2/Open the logger.defaults.properties file: vi /opt/arcsight/arcmc/config/logger/logger.defaults.properties
+#3/Find 'marketplace.domain=marketplace.saas.hpe.com' and comment it
+#4/
+
+#Marketplace production server domain
+#marketplace.domain=marketplace.saas.hpe.co
