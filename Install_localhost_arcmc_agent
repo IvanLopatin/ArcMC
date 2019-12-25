@@ -1,0 +1,5 @@
+#
+./ArcSight-ArcMCAgent-.<agent_installer_build_number>.0.bin LAX_VM  <install_dir>/current/local/jre/bin/java
+
+#Example
+#[root@arcmc opt]# /tmp/ArcSight-ArcMCAgent-2.9.3.1495.0.bin LAX_VM  /opt/arcsight/current/local/jre/bin/java
