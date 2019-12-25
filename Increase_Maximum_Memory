@@ -1,0 +1,11 @@
+#Edit /opt/arcsight/current/arcsight/bin/query_platform
+#Find result="-Xmx1024m" and change to result="-Xmx4096m"
+
+elif [ "$1" = "web_memory" ]; then
+if [ "x$WEB_MEMORY" = "x" ]; then
+result="-Xmx1024m" <---------------------------------------------------------------------
+case $model in
+C1000) result="-Xmx256m";;
+C1200) result="-Xmx512m";;
+C1300) result="-Xmx512m";;
+C1400) result="-Xmx512m";;
