@@ -1,0 +1,32 @@
+#Logon to ArcMC operation system
+#Enter to data base
+/opt/arcsight/current/arcsight/bin/psql rwdb web
+#check retrospective cash to connector
+select creation_time,entity_id,metric_name,metric_type,numeric_value,product_type from monitor_metric_data where entity_id='EN-zFien2kBABCAAg3IpLPzrg==' and metric_name = 'Caching' ORDER by creation_time;
+
+
+      creation_time      |          entity_id          | metric_name |    metric_type    |  numeric_value   | product_type
+-------------------------+-----------------------------+-------------+-------------------+------------------+--------------
+ 2020-09-02 23:02:00.317 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |          97338.2 | CONNECTOR
+ 2020-09-07 00:02:00.389 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |         99077.25 | CONNECTOR
+ 2020-09-07 15:05:30.10  | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99366 | CONNECTOR
+ 2020-09-08 00:40:30.075 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99525 | CONNECTOR
+ 2020-09-02 17:02:00.20  | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |         97233.65 | CONNECTOR
+ 2020-09-05 22:02:03.388 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |         98611.35 | CONNECTOR
+ 2020-09-08 09:20:30.185 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99680 | CONNECTOR
+ 2020-09-08 02:15:30.061 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99582 | CONNECTOR
+ 2020-09-02 06:02:00.433 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |         97035.15 | CONNECTOR
+ 2020-09-07 17:30:30.12  | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99402 | CONNECTOR
+ 2020-09-07 08:02:00.423 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |         99226.75 | CONNECTOR
+ 2020-09-07 12:00:30.117 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99309 | CONNECTOR
+ 2020-09-07 22:15:30.143 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99509 | CONNECTOR
+ 2020-09-08 09:21:10.768 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99699 | CONNECTOR
+ 2020-09-06 08:02:00.561 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            98790 | CONNECTOR
+ 2020-09-08 03:05:30.11  | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99587 | CONNECTOR
+ 2020-09-08 04:40:30.104 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |          99602.5 | CONNECTOR
+ 2020-09-08 10:10:30.054 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99686 | CONNECTOR
+ 2020-09-07 13:30:30.102 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99329 | CONNECTOR
+ 2020-09-07 18:20:30.066 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99404 | CONNECTOR
+ 2020-09-08 07:45:30.145 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99638 | CONNECTOR
+ 2020-09-08 11:00:30.056 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99734 | CONNECTOR
+ 2020-09-07 11:15:30.133 | EN-zFien2kBABCAAg3IpLPzrg== | Caching     | CONNECTOR_CACHING |            99276 | CONNECTOR
